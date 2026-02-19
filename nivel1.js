@@ -1,6 +1,8 @@
+console.log("Exercício 1_____________________________________________________");
+
 class Livro {
   constructor(titulo, autor, ano) {
-    (this.titulo = titulo), (this.autor = autor), (this.ano = ano);
+    ((this.titulo = titulo), (this.autor = autor), (this.ano = ano));
   }
 
   descrever() {
@@ -17,8 +19,9 @@ console.log(livro2.descrever());
 console.log(livro3.descrever());
 
 console.log(
-  "_________________________________________________________________________"
+  "_________________________________________________________________________",
 );
+console.log("Exercício 2_____________________________________________________");
 
 class Aluno {
   constructor(notas) {
@@ -54,8 +57,10 @@ console.log(aluno2.situacao());
 console.log(aluno3.situacao());
 
 console.log(
-  "_________________________________________________________________________"
+  "_________________________________________________________________________",
 );
+
+console.log("Exercício 3_____________________________________________________");
 
 class Produto {
   constructor(preco) {
@@ -89,3 +94,8 @@ class CarrinhoDeCompras {
     return valorTotalEmProdutosNoCarrinho;
   }
 }
+
+const produto1 = new Produto(10);
+const carrinho1 = new CarrinhoDeCompras();
+console.log(carrinho1.adicionarProdutoNoCarrinho(produto1));
+console.log(carrinho1.listarProdutosNoCarrinho());
